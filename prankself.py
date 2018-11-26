@@ -8,14 +8,12 @@ from bs4 import BeautifulSoup
 #from imgurpython import ImgurClient
 import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2, urllib3, tempfile, glob, shutil, unicodedata, goslate
 
-cl = LINETCR.LINE()
-cl.login(qr=True)
-cl.loginResult()
+cl = LINE("EzRs9fmhRq64GaifW9ba.iWUy5hFsviofrvd8vX8GwG.sqmGzv357rewfD59KyV4LuFBZuII+EFhY++3QxQpk6g=")
+cl.log("Auth Token : " + str(cl.authToken))
+cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
 
-
-
-print "SELFBOT PRANKBOTS\nSUCCES LOGIN\nSELAMAT MENGGUNAKANYA KAWAN"
-reload(sys)
+oepoll = OEPoll(cl)
+call = cl)
 sys.setdefaultencoding('utf-8')
 
 helpMessage="""(╣••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́••╣)
